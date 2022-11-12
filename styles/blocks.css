@@ -1,0 +1,28 @@
+.block-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 90%;
+    gap:10px;
+}
+.block{
+    background-color: rgb(150, 150, 150);
+    min-height: 30px;
+}
+#elem1{
+    grid-row: span 2;
+}
+#elem2{
+    grid-column: span 2;
+}
+#elem6{
+    grid-row: span 2;
+}
+#elem7{
+    grid-column: span 3;
+}
+
+.block:hover{
+    background-color: springgreen;
+    transition: all 0.9s;
+}
